@@ -1,4 +1,5 @@
-FROM awiciroh/ciroh-ngen-image AS base
+# FROM awiciroh/ciroh-ngen-image AS base
+FROM yduan13/ciroh-ngen-image2 AS base
 RUN dnf install -y git gcc-c++ make cmake python3-devel python3-pip
 WORKDIR /calibration
 RUN chmod -R 777 /calibration/
